@@ -2,7 +2,7 @@
 import { SayHello } from "@/Services/sayHello.service";
 import { sendMessage } from "@/Services/sendMessage.service";
 import React, { useEffect, useState } from "react";
-import { useForm } from "react-hook-form";
+import { SubmitHandler, useForm } from "react-hook-form";
 import { IoMdSend } from "react-icons/io";
 import { TbMessageChatbot } from "react-icons/tb";
 import { BeatLoader } from "react-spinners";
@@ -16,6 +16,10 @@ interface responseData {
   id: string;
   model: string;
 }
+
+type FormData = {
+  message: string;
+};
 
 export default function SendMessage() {
   const [data, setData] = useState<responseData | null>(null);
@@ -44,9 +48,9 @@ export default function SendMessage() {
     sayHello();
   }, []);
 
-  const { register, handleSubmit, reset } = useForm();
+  const { register, handleSubmit, reset } = useForm<FormData>();
 
-  const onSubmit = async (formData: any) => {
+  const onSubmit: SubmitHandler<FormData> = async (formData) => {
     reset();
     const dataResponse = await sendMessage(formData.message as string);
     setData(dataResponse);
