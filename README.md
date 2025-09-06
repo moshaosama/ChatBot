@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🤖 AI Chatbot — Chat Completions Edition
 
-## Getting Started
+![AI Animation](https://media.giphy.com/media/bAI7Zt5T4BxwO/giphy.gif)
 
-First, run the development server:
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Open%20Now-00CC88?style=for-the-badge&logo=vercel)](https://chat-bot-plum-nine.vercel.app/)
+![Built with](https://img.shields.io/badge/Chat%20Completions-API-8A2BE2?style=for-the-badge&logo=openai)
+![Next.js](https://img.shields.io/badge/Next.js-14-000?style=for-the-badge&logo=next.js)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🌐 Live Demo
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+👉 **Try it now:** [chat-bot-plum-nine.vercel.app](https://chat-bot-plum-nine.vercel.app/)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+![Chatbot Demo](https://media.giphy.com/media/Kc1L5Kw6ut8xWx6sSX/giphy.gif)
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## ✨ Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- ⚡ Streaming responses (typing effect)
+- 🧩 Chat History
+- 🧠 System Prompt (custom persona)
+- 🌍 Multilingual UI (i18n ready)
+- 🎨 Polished design with Tailwind + shadcn/ui
+- 🚀 1-Click Deploy (Vercel)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🖼️ Screens & Aesthetic
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+![AI Visual 1](https://media.giphy.com/media/duzpaTbCUy9Vu/giphy.gif)
+![AI Visual 2](https://media.giphy.com/media/fwbZnTftCXVocKzfxR/giphy.gif)
+![AI Visual 3](https://media.giphy.com/media/coxQHKASG60HrHtvkt/giphy.gif)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🏗️ Architecture
+
+```txt
+app/
+ ├─ (chat)/page.tsx        # Chat UI
+ ├─ api/chat/route.ts      # Chat Completions API route
+ └─ layout.tsx             # Theme & Providers
+components/
+ ├─ Chat.tsx               # Streaming logic
+ ├─ Message.tsx            # Message bubble
+ └─ SendMessage.tsx        # Input form
+lib/
+ ├─ ai.ts                  # AI client
+ └─ utils.ts               # Helpers
