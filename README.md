@@ -5,6 +5,7 @@
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Open%20Now-00CC88?style=for-the-badge&logo=vercel)](https://chat-bot-plum-nine.vercel.app/)
 ![Built with](https://img.shields.io/badge/Chat%20Completions-API-8A2BE2?style=for-the-badge&logo=openai)
 ![Next.js](https://img.shields.io/badge/Next.js-14-000?style=for-the-badge&logo=next.js)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript)
 
 ---
