@@ -33,7 +33,6 @@
 
 ![AI Visual 1](https://media.giphy.com/media/duzpaTbCUy9Vu/giphy.gif)
 ![AI Visual 2](https://media.giphy.com/media/fwbZnTftCXVocKzfxR/giphy.gif)
-![AI Visual 3](https://media.giphy.com/media/coxQHKASG60HrHtvkt/giphy.gif)
 
 ---
 
