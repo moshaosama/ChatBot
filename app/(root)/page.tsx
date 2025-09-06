@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import Welcome from "../Welcome/page";
 import Header from "../Components/Header";
 import { IoMdSend } from "react-icons/io";
+import SendMessage from "../Components/SendMessage";
 
 const page = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -21,6 +22,7 @@ const page = () => {
       <>
         <Header />
 
+        <SendMessage />
         <form className="fixed bottom-0 w-full flex gap-3 justify-center bg-white p-4">
           <input
             type="text"
