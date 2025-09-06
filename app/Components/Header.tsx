@@ -16,7 +16,7 @@ const Links = [
 const Header = () => {
   return (
     <div className="bg-white  shadow-md shadow-gray-400">
-      <div className=" flex mx-20 justify-between items-center">
+      <div className=" flex mx-20 max-sm:mx-2 justify-between items-center">
         <div className="flex items-center gap-3 py-3">
           <Image
             src="/istockphoto-1010001882-612x612-removebg-preview.png"
@@ -26,7 +26,7 @@ const Header = () => {
           />
           <h1 className="text-xl font-bold">ChatBot</h1>
         </div>
-        <div>
+        <div className="max-sm:hidden">
           <div className="flex gap-5  items-center text-lg font-bold">
             {Links?.map((link) => (
               <div key={link.name}>
