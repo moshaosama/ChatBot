@@ -7,7 +7,7 @@ import SendMessage from "../Components/SendMessage";
 
 const page = () => {
   const [isLoading, setIsLoading] = useState(true);
-
+  console.log("API_KEY is:", process.env.NEXT_PUBLIC_API_KEY);
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
@@ -23,21 +23,6 @@ const page = () => {
         <Header />
 
         <SendMessage />
-        <form className="fixed bottom-0 w-full flex gap-3 justify-center bg-white p-4">
-          <input
-            type="text"
-            name=""
-            id=""
-            className="w-[60pc] p-4 rounded-xl bg-[#e7e7e7]"
-            placeholder="Type your message here..."
-          />
-          <button
-            type="submit"
-            className="bg-blue-500 cursor-pointer hover:bg-blue-600 transition-all duration-300 text-white p-4 rounded-xl"
-          >
-            <IoMdSend size={20} />
-          </button>
-        </form>
       </>
     </div>
   );
