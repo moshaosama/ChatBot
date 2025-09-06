@@ -29,7 +29,7 @@ const Header = () => {
         <div>
           <div className="flex gap-5  items-center text-lg font-bold">
             {Links?.map((link) => (
-              <div>
+              <div key={link.name}>
                 <h1>{link.name}</h1>
               </div>
             ))}
