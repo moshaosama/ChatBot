@@ -2,10 +2,9 @@
 import React, { useEffect, useState } from "react";
 import Welcome from "./Welcome/page";
 import Header from "../Components/Header";
-import { IoMdSend } from "react-icons/io";
 import SendMessage from "../Components/SendMessage";
 
-const page = () => {
+const Page = () => {
   const [isLoading, setIsLoading] = useState(true);
   console.log("API_KEY is:", process.env.NEXT_PUBLIC_API_KEY);
   useEffect(() => {
@@ -29,4 +28,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

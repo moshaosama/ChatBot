@@ -1,7 +1,7 @@
 "use client";
 import { SayHello } from "@/Services/sayHello.service";
 import { sendMessage } from "@/Services/sendMessage.service";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { IoMdSend } from "react-icons/io";
 import { TbMessageChatbot } from "react-icons/tb";
@@ -76,7 +76,7 @@ export default function SendMessage() {
   return (
     <>
       <div className="my-20 mx-60">
-        {Messages?.map((msg, index) => (
+        {Messages?.map((msg) => (
           <>
             {msg?.role === "assistant" && (
               <div className="flex gap-5">
