@@ -21,7 +21,7 @@ const Welcome = () => {
               Welcome to your AI Companion
             </h1>
             <p className="text-gray-600 w-80 text-center text-xl mt-1">
-              Your intelligent partner for seamless productivity. Let's begin
+              Your intelligent partner for seamless productivity. Let is begin
             </p>
           </div>
         </div>
