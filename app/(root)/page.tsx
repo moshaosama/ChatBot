@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import Welcome from "../Welcome/page";
+import Welcome from "./Welcome/page";
 import Header from "../Components/Header";
 import { IoMdSend } from "react-icons/io";
 import SendMessage from "../Components/SendMessage";
@@ -17,13 +17,14 @@ const page = () => {
   }, []);
   return (
     <div className="bg-gradient-to-l relative from-blue-200 to-purple-200 h-[100vh]">
-      {/* {isLoading ? <Welcome /> : null} */}
+      {isLoading ? <Welcome /> : null}
+      {!isLoading ? (
+        <>
+          <Header />
 
-      <>
-        <Header />
-
-        <SendMessage />
-      </>
+          <SendMessage />
+        </>
+      ) : null}
     </div>
   );
 };
