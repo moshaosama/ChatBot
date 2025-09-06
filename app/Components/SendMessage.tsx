@@ -79,7 +79,7 @@ export default function SendMessage() {
   };
   return (
     <>
-      <div className="my-20 mx-60">
+      <div className="my-20 mx-60 max-sm:mx-2">
         {Messages?.map((msg) => (
           <>
             {msg?.role === "assistant" && (
